@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human Choice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/human_choice"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/human"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/paper"
+        tools:ignore="DuplicateIds">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Choice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_below="@id/human_choice">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/computer_choice"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/computer"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human 0  Computer 0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/computer_choice">
+    </TextView>
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/score"
+        android:text="Paper">
+    </Button>
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/score"
+        android:layout_toRightOf="@id/paper"
+        android:text="Rock">
+    </Button>
+
+    <Button
+        android:id="@+id/scissor"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/score"
+        android:layout_toRightOf="@id/rock"
+        android:text="Scissor">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boo Zhan Y"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/rock">
+    </TextView>
+
+</RelativeLayout>
+
